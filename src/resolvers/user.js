@@ -14,9 +14,7 @@ export default {
   User: {
     // username: (user) => `${user.firstname} ${user.lastname}`,
     messages: (user, args, { models }) => {
-      return Object.values(models.messages).filter(
-        (message) => message.userId === user.id
-      );
+      return Object.values(models.messages).filter((message) => message.userId === user.id);
     },
   },
 };
