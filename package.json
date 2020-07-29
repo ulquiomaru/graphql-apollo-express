@@ -5,12 +5,19 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node src/index.js"
+    "start": "nodemon --exec babel-node src/index.js",
+    "test-server": "cross-env TEST_DATABASE=graphqltest npm start",
+    "test": "mocha --require @babel/register 'src/**/*.spec.js'"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
+    "@babel/register": "^7.10.5",
+    "axios": "^0.19.2",
+    "chai": "^4.2.0",
+    "cross-env": "^7.0.2",
+    "mocha": "^8.0.1",
     "nodemon": "^2.0.4"
   },
   "dependencies": {
