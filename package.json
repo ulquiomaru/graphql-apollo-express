@@ -1,6 +1,6 @@
 {
   "name": "graphql-apollo-express",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "ulquiomaru",
   "license": "MIT",
   "main": "index.js",
